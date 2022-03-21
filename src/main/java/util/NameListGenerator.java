@@ -1,8 +1,8 @@
 package util;
 
-public class nameListGenerator {
+public class NameListGenerator {
 
-    nameListGenerator() {
+    NameListGenerator() {
     }
     //randomly generate a name
     public static String generateName() {

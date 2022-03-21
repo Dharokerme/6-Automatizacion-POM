@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import pages.common.BasePageActions;
-import util.nameListGenerator;
+import util.NameListGenerator;
 
 import java.util.List;
 
@@ -89,7 +89,7 @@ public class RegisterPage extends BasePageActions {
         scrollOn(ssn);
         typeOnTextField(ssn, "1152208813");
         scrollOn(username);
-        typeOnTextField(username, nameListGenerator.generateName());
+        typeOnTextField(username, NameListGenerator.generateName());
         scrollOn(password);
         typeOnTextField(password, "12345");
         scrollOn(repeatedPassword);
