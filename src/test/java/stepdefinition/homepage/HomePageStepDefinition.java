@@ -33,7 +33,7 @@ public class HomePageStepDefinition extends BaseTestPage {
     @When("llene el username y password correctamente.")
     public void llene_el_username_y_password_correctamente() {
         try {
-            HomePage homePage = new HomePage(driver, 10);
+            HomePage homePage = new HomePage(driver, 3);
             homePage.isHomePageDisplayed();
             homePage.sigInUsernameandPassword();
 
@@ -47,7 +47,7 @@ public class HomePageStepDefinition extends BaseTestPage {
     @Then("entrara a la cuenta overview.")
     public void entrara_a_la_cuenta_overview() {
         try {
-            OverviewAccount overviewAccount = new OverviewAccount(driver, 10);
+            OverviewAccount overviewAccount = new OverviewAccount(driver, 3);
             Assertions.assertTrue(overviewAccount.isLogoutDisplayed());
             quiteDriver();
 
@@ -61,24 +61,26 @@ public class HomePageStepDefinition extends BaseTestPage {
     @When("no escriba usuario y contrasena.")
     public void no_escriba_usuario_y_contrasena() {
         try {
-            HomePage homePage = new HomePage(driver, 10);
+            HomePage homePage = new HomePage(driver, 3);
             homePage.isHomePageDisplayed();
             homePage.clickOnLogginButton();
         } catch (Exception exception) {
             Assertions.fail(exception.getMessage(), exception);
             LOGGER.error(exception.getMessage(), exception);
+            quiteDriver();
         }
     }
 
     @Then("recibira un mensaje de error")
     public void recibira_un_mensaje_de_error() {
         try {
-            HomePage homePage = new HomePage(driver, 10);
+            HomePage homePage = new HomePage(driver, 3);
             Assertions.assertEquals("Please enter a username and password.", homePage.isErrorLoggin());
             quiteDriver();
         } catch (Exception exception) {
             Assertions.fail(exception.getMessage(), exception);
             LOGGER.error(exception.getMessage(), exception);
+            quiteDriver();
         }
     }
 }

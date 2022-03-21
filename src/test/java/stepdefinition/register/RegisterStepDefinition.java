@@ -31,7 +31,7 @@ public class RegisterStepDefinition extends BaseTestPage {
     @When("llene el formulario correctamente.")
     public void lleneElFormularioCorrectamente() {
         try {
-            RegisterPage registerPage = new RegisterPage(driver,10);
+            RegisterPage registerPage = new RegisterPage(driver,3);
             registerPage.fillRegisterForm();
 
 
@@ -45,7 +45,7 @@ public class RegisterStepDefinition extends BaseTestPage {
     @Then("recibira un mensaje de cuenta creada correctamente.")
     public void recibiraUnMensajeDeCuentaCreadaCorrectamente() {
         try {
-            RegisterPage registerPage = new RegisterPage(driver,10);
+            RegisterPage registerPage = new RegisterPage(driver,3);
             Assertions.assertEquals("Your account was created successfully. You are now logged in.", registerPage.getTextFromWelcomeMessage());
             quiteDriver();
 
@@ -60,7 +60,7 @@ public class RegisterStepDefinition extends BaseTestPage {
     @When("llene el formulario incorrectamente.")
     public void lleneElFormularioIncorrectamente() {
         try {
-            RegisterPage registerPage = new RegisterPage(driver,10);
+            RegisterPage registerPage = new RegisterPage(driver,3);
             registerPage.passToRegisterButton();
         } catch (Exception e) {
             LOGGER.error("Error en la ejecucion del test: " + e.getMessage());
@@ -72,7 +72,7 @@ public class RegisterStepDefinition extends BaseTestPage {
     @Then("recibira un mensaje con los datos a corregir.")
     public void recibiraUnMensajeConLosDatosACorregir() {
         try {
-            RegisterPage registerPage = new RegisterPage(driver,10);
+            RegisterPage registerPage = new RegisterPage(driver,3);
             Assertions.assertEquals(10, registerPage.getSizeErrorsMessage());
             quiteDriver();
         } catch (

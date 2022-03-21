@@ -21,7 +21,7 @@ public class ContactPageStepDefinition extends BaseTestPage {
             setUpLog4j2();
             setUpWebDriver();
             generalSetUp();
-            HomePage homePage = new HomePage(driver,10);
+            HomePage homePage = new HomePage(driver,3);
             homePage.clickOnContact();
         } catch (Exception exception) {
             Assertions.fail(exception.getMessage(), exception);
@@ -33,7 +33,7 @@ public class ContactPageStepDefinition extends BaseTestPage {
     @When("llene el formulario correctamente")
     public void lleneElFormularioCorrectamente() {
         try {
-            ContactPage contactPage = new ContactPage(driver,10);
+            ContactPage contactPage = new ContactPage(driver,3);
             contactPage.fillContactFields();
 
         } catch (Exception exception) {
@@ -46,7 +46,7 @@ public class ContactPageStepDefinition extends BaseTestPage {
     @Then("recibira un mensaje de pronto contacto")
     public void recibiraUnMensajeDeProntoContacto() {
         try {
-            ContactPage contactPage = new ContactPage(driver,10);
+            ContactPage contactPage = new ContactPage(driver,3);
             Assertions.assertTrue(contactPage.getSuccessMessageText().contains("A Customer Care Representative will be contacting you."));
             quiteDriver();
         } catch (Exception exception) {
@@ -59,7 +59,7 @@ public class ContactPageStepDefinition extends BaseTestPage {
     @When("llene el formulario incorrectamente")
     public void lleneElFormularioIncorrectamente() {
         try {
-            ContactPage contactPage = new ContactPage(driver,10);
+            ContactPage contactPage = new ContactPage(driver,3);
             contactPage.justPressSendButton();
 
         } catch (Exception exception) {
@@ -72,7 +72,7 @@ public class ContactPageStepDefinition extends BaseTestPage {
     @Then("recibira mensajes con los campos a corregir")
     public void recibiraMensajesConLosCamposACorregir() {
         try {
-            ContactPage contactPage = new ContactPage(driver,10);
+            ContactPage contactPage = new ContactPage(driver,3);
             Assertions.assertEquals(4, contactPage.getSizeErrorsMessage());
             quiteDriver();
         } catch (Exception exception) {
