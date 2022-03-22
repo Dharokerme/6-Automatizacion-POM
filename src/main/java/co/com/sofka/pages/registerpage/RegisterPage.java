@@ -1,13 +1,13 @@
-package pages.registerpage;
+package co.com.sofka.pages.registerpage;
 
+import co.com.sofka.pages.common.BasePageActions;
 import org.apache.log4j.Logger;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
-import pages.common.BasePageActions;
-import util.NameListGenerator;
+import co.com.sofka.util.NameListGenerator;
 
 import java.util.List;
 

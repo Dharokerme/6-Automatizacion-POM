@@ -1,4 +1,4 @@
-package pages.contactpage;
+package co.com.sofka.pages.contactpage;
 
 import org.apache.log4j.Logger;
 
@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
-import pages.common.BasePageActions;
+import co.com.sofka.pages.common.BasePageActions;
 
 import java.util.List;
 

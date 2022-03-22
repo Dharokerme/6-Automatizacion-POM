@@ -1,12 +1,12 @@
-package pages.homepage;
+package co.com.sofka.pages.homepage;
 
+import co.com.sofka.pages.common.BasePageActions;
 import org.apache.log4j.Logger;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
-import pages.common.BasePageActions;
 
 public class HomePage extends BasePageActions {
 

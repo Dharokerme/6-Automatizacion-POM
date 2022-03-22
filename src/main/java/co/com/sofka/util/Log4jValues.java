@@ -1,4 +1,4 @@
-package util;
+package co.com.sofka.util;
 
 public enum Log4jValues {
     LOG4J_PROPERTIES_FILE_PATH("\\src\\main\\resources\\log4j.properties");

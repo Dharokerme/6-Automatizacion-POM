@@ -1,13 +1,13 @@
 package stepdefinition.homepage;
 
+import stepdefinition.setup.BaseTestPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.apache.log4j.Logger;
 import org.junit.jupiter.api.Assertions;
-import stepdefinition.setup.BaseTestPage;
-import pages.homepage.HomePage;
-import pages.overviewaccount.OverviewAccount;
+import co.com.sofka.pages.homepage.HomePage;
+import co.com.sofka.pages.overviewaccount.OverviewAccount;
 import runners.HomePageTestCucumber;
 
 public class HomePageStepDefinition extends BaseTestPage {

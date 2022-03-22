@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         snippets = CucumberOptions.SnippetType.CAMELCASE,
         publish = true,
-        features = {"src/test/resources/features/registro.feature"},
+        features = {"src/test/resources/features/registro/registro.feature"},
         glue = "stepdefinition.register",
         plugin = {"pretty", "html:target/cucumber-reports"}
 )

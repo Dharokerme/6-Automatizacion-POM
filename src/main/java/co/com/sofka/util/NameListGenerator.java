@@ -1,4 +1,4 @@
-package util;
+package co.com.sofka.util;
 
 public class NameListGenerator {
 

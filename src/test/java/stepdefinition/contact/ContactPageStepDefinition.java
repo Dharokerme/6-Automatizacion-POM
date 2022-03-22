@@ -1,13 +1,13 @@
 package stepdefinition.contact;
 
+import stepdefinition.setup.BaseTestPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.apache.log4j.Logger;
 import org.junit.jupiter.api.Assertions;
-import pages.contactpage.ContactPage;
-import pages.homepage.HomePage;
-import stepdefinition.setup.BaseTestPage;
+import co.com.sofka.pages.contactpage.ContactPage;
+import co.com.sofka.pages.homepage.HomePage;
 import runners.ContactPageTestCucumber;
 
 public class ContactPageStepDefinition extends BaseTestPage {

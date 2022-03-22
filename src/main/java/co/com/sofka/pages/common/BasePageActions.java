@@ -1,4 +1,4 @@
-package pages.common;
+package co.com.sofka.pages.common;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.*;

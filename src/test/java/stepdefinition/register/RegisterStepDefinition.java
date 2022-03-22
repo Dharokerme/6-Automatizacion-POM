@@ -1,13 +1,13 @@
 package stepdefinition.register;
 
+import stepdefinition.setup.BaseTestPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.apache.log4j.Logger;
 import org.junit.jupiter.api.Assertions;
-import stepdefinition.setup.BaseTestPage;
-import pages.homepage.HomePage;
-import pages.registerpage.RegisterPage;
+import co.com.sofka.pages.homepage.HomePage;
+import co.com.sofka.pages.registerpage.RegisterPage;
 
 public class RegisterStepDefinition extends BaseTestPage {
 
