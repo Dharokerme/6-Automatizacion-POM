@@ -1,6 +1,6 @@
 package co.com.sofka.pages.registerpage;
 
-import co.com.sofka.pages.common.BasePageActions;
+import co.com.sofka.common.BasePageActions;
 import org.apache.log4j.Logger;
 
 import org.openqa.selenium.WebDriver;

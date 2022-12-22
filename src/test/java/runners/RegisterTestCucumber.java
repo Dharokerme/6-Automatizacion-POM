@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         publish = true,
         features = {"src/test/resources/features/registro/registro.feature"},
         glue = "stepdefinition.register",
-        plugin = {"pretty", "html:target/cucumber-reports"}
+        plugin = {"pretty", "html:target/cucumber-reports.html"}
 )
 public class RegisterTestCucumber {
 }
